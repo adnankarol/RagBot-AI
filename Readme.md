@@ -1,6 +1,6 @@
 # RagBot AI Chat 🤖💬  
 
-RagBot is an advanced **Retrieval-Augmented Generation (RAG)** chatbot that integrates **Ollama** and **LangChain** to provide intelligent, data-driven conversations. It can work with or without internal company data, making it a versatile AI assistant. The chatbot is accessible via a web browser and runs on a **FastAPI** or **Flask** backend. 🚀
+RagBot is an advanced **Retrieval-Augmented Generation (RAG)** chatbot that integrates **Ollama** and **LangChain** to provide intelligent, data-driven conversations. It can work with or without internal company data, making it a versatile AI assistant. The chatbot is accessible via a web browser and runs on a **Flask** backend. 🚀
 
 ## 🌟 Features  
 
