@@ -6,10 +6,8 @@ RagBot is an advanced **Retrieval-Augmented Generation (RAG)** chatbot that inte
 
 - **Ollama Integration** 🏗️: Easily switch between different AI models.  
 - **Retrieval-Augmented Generation (RAG)** 📚: Uses pre-existing company data for enhanced responses.  
-- **Web Deployment** 🌐: Simple HTML/JS frontend for easy interaction.  
-- **FastAPI & Flask Support** 🔥: Choose your preferred backend framework.  
-- **Customizable Interface** 🎨: Modify the chatbot UI with ease.  
-- **Supports Multiple AI Models** 🧠: Choose from Llama, Mistral, and other models via Ollama.  
+- **Web Deployment** 🌐: Simple HTML/JS frontend for easy interaction and modify the chatbot UI with ease.
+- **Flask Support** 🔥: For backend framework.
 
 ## 📂 Project Structure  
 
@@ -18,7 +16,7 @@ RagBot is an advanced **Retrieval-Augmented Generation (RAG)** chatbot that inte
 ├── ChatBot.py                # Core chatbot logic (without company data)
 ├── RagBot.py                 # RAG-enhanced chatbot (with company data)
 ├── Internal_Data.txt         # Example company data (FAKE DATA)
-├── app.py                     # Flask/FastAPI server
+├── app.py                    # Flask server
 ├── requirements.txt          # Python dependencies
 ├── set_environment.sh        # Script to set up the environment
 ├── templates
@@ -84,7 +82,7 @@ http://127.0.0.1:8000/
 
 If you want to test the bots, without the webbrowser, you can run either `python ChatBot.py` or `python RagBot.py` in your terminal to chat with the bot without and with RAG enabled respectively.
 
-## 🧠 Why **LangChain** & **Ollama**?  
+## 🧠 **Gen AI Tools Used**
 
 ### 🔹 LangChain  
 
@@ -107,6 +105,18 @@ Ollama enables running **large language models (LLMs)** locally with ease. Here 
 | **Phi-2** 🧠               | Small, efficient model for lightweight apps     |  
 | **Custom Fine-Tuned Models** 🔬 | Tailored to your business data and needs   |  
 
+### 🔹 LLaMA 3
+
+A large language model by Meta, focused on efficient, open-source NLP tasks like text generation and question-answering.
+
+### 🔹 FAISS
+
+A library by Meta for fast, efficient similarity search and clustering of high-dimensional vectors, commonly used in search and recommendation systems.
+
+### 🔹 Sentence-Transformers/all-MiniLM-L6-v2
+
+A lightweight model for generating sentence embeddings, optimized for fast and efficient semantic text comparison.
+
 ### 🏗️ **How We Use Ollama in RAG**  
 
 In our **Retrieval-Augmented Generation (RAG) approach**, we use the following:  
@@ -115,7 +125,7 @@ In our **Retrieval-Augmented Generation (RAG) approach**, we use the following:
 - **RAG Pipeline**: Uses `Internal_Data.txt` for contextual responses  
 - **LLM**: Runs on Ollama with **LLaMA 3**
 
-## 🖼️ Sample Runs  
+## 🖼️ Sample Outputs  
 
 ### 🔹 Basic Chatbot (No Company Data)  
 
